@@ -1,0 +1,57 @@
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .resultParas {
+    margin-top: 20px;
+  }
+  
+  .guessParas {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+  }
+  
