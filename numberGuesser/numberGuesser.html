@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guesser</title>
+  <link rel="stylesheet" type="text/css" href="ngStyle.css" />
+</head>
+
+
+<body>
+  <header>
+    <h1>Number Guesser</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+          <!-- The "Games" tab when panned over should show a dropdown list of games available -->
+          <li class="dropdown">
+            <a href="#">Games &#9660;</a>
+            <div class="dropdown-content">
+              <a href="number_guesser.html">Number Guesser</a>
+              <a href="rock_paper_scissors.html">Rock Paper Scissors</a>
+              <a href="hangman.html">Hangman</a>
+              <a href="tic_tac_toe.html">Tic Tac Toe</a>
+            </div>
+          </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Leaderboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <img src="number_guesser_thumbnail.jpeg" alt="Number Guesser">
+      <p class="hello">Guess a number between 1 and 100</p>
+      <input type="number" id="guessInput" />
+      <input type="submit" value="Submit" id="guessSubmit" />
+      <div class="resultParas">
+        <p class="guessParas" id="guesses">Welcome</p>
+        <p class="guessParas" id="lastResult">Try it</p>
+        <p class="guessParas" id="lowOrHi">Let's go</p>
+      </div>
+    </div>
+
+    <button id="resetButton">Play Again</button>
+
+    <button id="backToHome"><img src="homeIcon.png" alt="backToHome"></button>
+    
+    <script src="ngScript.js"></script>
+  </body>
+
+  <footer>Yi Han</footer>
+</html>
