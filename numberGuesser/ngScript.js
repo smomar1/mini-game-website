@@ -21,14 +21,15 @@ function checkGuess() {
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right!';
     lastResult.style.backgroundColor = 'green';
-    lowOrHi.textContent = '';
+    lowOrHi.textContent = 'Well done!';
     setGameOver();
   } else if (guessCount === 10) {
     lastResult.textContent = '!!!GAME OVER!!!';
     setGameOver();
   } else {
     lastResult.textContent = 'Wrong!';
-    lastResult.style.backgroundColor = 'red';
+    lastResult.style.backgroundColor = '#E70612';
+    
     if (userGuess < randomNumber) {
       lowOrHi.textContent = 'Last guess was too low!';
     } else {
@@ -54,9 +55,9 @@ function setGameOver() {
 
 function resetGame() {
   guessCount = 1;
-  const resetParas = document.querySelectorAll('.guessParas p');
+  resetParas = document.querySelectorAll('.guessParas p');
   for (let i = 0; i < resetParas.length; i++) {
-    resetParas[i].textContent = '';
+      resetParas[i].textContent = '';
   }
   resetButton.parentNode.removeChild(resetButton);
   guessField.disabled = false;

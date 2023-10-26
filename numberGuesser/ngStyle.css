@@ -1,57 +1,154 @@
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+header {
+  background-color: #E70612;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+h1 {
+  font-size: 38px;
+  color: #fff;
 }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #484848;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+  
+.dropdown-content a:hover {
+    color: #E70612;
+}
+
+/* style for game page */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+  width: 250px;
+  margin-top: 15px;
+}
+
+.hello {
+  font-size: 18px;
+}
   
-  .container {
-    background-color: #fff;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  margin-right: 10px;
+}
   
-  h1 {
-    color: #333;
-  }
-  
-  input[type="number"] {
-    width: 80px;
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  input[type="submit"] {
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .resultParas {
+input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#guessSubmit:hover {
+  background-color: #E70612;
+}
+
+.resultParas {
     margin-top: 20px;
-  }
-  
-  .guessParas {
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
-  }
-  
+}
+
+.guessParas {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+#resetButton {
+  background-color: #ccc;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#resetButton:hover {
+  background-color: #333;
+}
+
+#backToHome {
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#backToHome img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: #E70612;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-weight: bold;
+}
