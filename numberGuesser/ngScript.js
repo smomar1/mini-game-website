@@ -67,3 +67,9 @@ function resetGame() {
   lastResult.style.backgroundColor = 'white';
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+
+const backToHomeButton = document.getElementById('backToHome');
+
+backToHomeButton.addEventListener('click', function() {
+  window.location.href = '../homepage.html';
+});

@@ -118,7 +118,7 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
-#resetButton {
+/* #resetButton {
   background-color: #ccc;
   color: white;
   padding: 5px;
@@ -129,7 +129,7 @@ input[type="submit"] {
 
 #resetButton:hover {
   background-color: #333;
-}
+} */
 
 #backToHome {
   position: fixed;
