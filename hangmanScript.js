@@ -56,10 +56,22 @@ guessSubmit.addEventListener('click', checkGuess);
 function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
+  chosenWord = words[Math.floor(Math.random() * words.length)];
+  displayWord = "-".repeat(chosenWord.length);
+  guessedLetters = [];
+  incorrectGuesses = 0;
+  wordDisplay.textContent = displayWord.split("").join(" ");
   let resetButton = document.createElement('button');
   resetButton.textContent = 'Play Again';
   document.body.appendChild(resetButton);
   resetButton.addEventListener('click', () => {
     location.reload();  // refresh the page for a new game
   });
+}
+
+function homeButton() {
+  const backToHomeButton =document.getElementById('backToHome');
+  backToHomeButton.addEventListener('click', () => {
+    window.location.href = 'hangmanIndex.html';
+  });  
 }
