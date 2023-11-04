@@ -71,5 +71,5 @@ function resetGame() {
 const backToHomeButton = document.getElementById('backToHome');
 
 backToHomeButton.addEventListener('click', function() {
-  window.location.href = '../homepage.html';
+  window.location.href = '../index.html';
 });

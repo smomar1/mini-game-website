@@ -79,9 +79,9 @@ main {
 
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 30px;
-  align-items: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  justify-content: center;
 }
 
 .game-thumbnail {
