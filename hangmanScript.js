@@ -56,7 +56,7 @@ guessSubmit.addEventListener('click', checkGuess);
 function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
-  chosenWord = words[Math.floor(Math.random() * words.length)];
+  let chosenWord = words[Math.floor(Math.random() * words.length)];
   displayWord = "-".repeat(chosenWord.length);
   guessedLetters = [];
   incorrectGuesses = 0;
@@ -72,6 +72,8 @@ function setGameOver() {
 function homeButton() {
   const backToHomeButton =document.getElementById('backToHome');
   backToHomeButton.addEventListener('click', () => {
-    window.location.href = 'hangmanIndex.html';
+    window.location.href = 'homepage.html';
   });  
 }
+
+homeButton();
