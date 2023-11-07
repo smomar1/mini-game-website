@@ -1,0 +1,148 @@
+header {
+    background-color: #E70612;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+  
+h1 {
+    font-size: 38px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+nav ul li a:hover {
+    color: #484848;
+}
+  
+.dropdown {
+      position: relative;
+      display: inline-block;
+}
+    
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+}
+    
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+  
+.dropdown-content a {
+      color: #333; 
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+}
+    
+.dropdown-content a:hover {
+    color: #E70612;
+}
+  
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+  
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+  
+main {
+    padding: 20px;
+    text-align: center; 
+}
+
+/* Contact form styles */
+.Contact {
+    margin: 20px;
+}
+  
+form {
+    text-align: left;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+button[type="submit"] {
+    background-color: #E70612;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+button[type="submit"]:hover {
+    background-color: #484848;
+}
+  
+/* Footer styles */
+footer {
+    background-color: #E70612;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+  
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    justify-content: center;
+}
+  
+.game-thumbnail {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+    
+.game-thumbnail img {
+    width: 200px;
+    height: 150px;
+}
+    
+.game-thumbnail h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}

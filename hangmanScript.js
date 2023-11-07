@@ -1,4 +1,4 @@
-const words = ["example", "hangman", "javascript", "webdev", "openai"];
+const words = ["html", "css", "javascript", "games", "website"];
 const chosenWord = words[Math.floor(Math.random() * words.length)];
 let displayWord = "_".repeat(chosenWord.length);
 
@@ -72,7 +72,7 @@ function setGameOver() {
 function homeButton() {
   const backToHomeButton =document.getElementById('backToHome');
   backToHomeButton.addEventListener('click', () => {
-    window.location.href = 'homepage.html';
+    window.location.href = 'index.html';
   });  
 }
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Games - Team 14</title>
+    <link rel="stylesheet" href="contactStyles.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mini Games Portal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- The "Games" tab when panned over should show a dropdown list of games available -->
+          <li class="dropdown">
+            <a href="#">Games &#9660;</a>
+            <div class="dropdown-content">
+              <a href="numberGuesser/numberGuesser.html">Number Guesser</a>
+              <a href="rock_paper_scissors.html">Rock Paper Scissors</a>
+              <a href="hangmanIndex.html">Hangman</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Leaderboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+    
+        <section class="Contact">
+            <form action="submit_form_here" method="post" enctype="multipart/form-data">
+                <label for="name">Issue:</label>
+                <input type="text" id="name" name="issue" required><br>
+    
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="recipeDescription" rows="5" cols="50"></textarea><br>
+    
+                <label for="category">Games:</label>
+                <select id="category" name="gameCategory">
+                    <option value="number guesser">Number Guesser</option>
+                    <option value="rock paper scissors">Rock Paper Scissors</option>
+                    <option value="hangman">Hangman</option>
+                </select><br>
+    
+                <button type="submit">Submit Issue</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mini Games - Team 14 &copy; 2023</p>
+    </footer>
+
+  </body>
+</html>   
