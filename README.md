@@ -1,4 +1,11 @@
 # Mini-Game Website
+- Team 14
+- Yi Han
+- Tarlan Delfani
+- Salman Omar
+
+# Homepage
+- Yi Han
 
 ## Header
 - A prominently styled header displaying "Mini-Games Portal" or a similar title of your choice.
@@ -36,4 +43,7 @@
 - Guessing Letters: The players who are trying to guess the word take turns suggesting letters of the alphabet. If the guessed letter is in the secret word, it is filled into the appropriate blank spaces.
 - If the letter is not in the word, the letter is placed in the guessed letter list and you are given a warning of how many attempts you have left. you start with 6.
 - Winning and Losing: The guessing players continue to suggest letters until they either guess the entire word correctly or make too many incorrect guesses, resulting in no more attempts. If they guess the word before the lose their attempts, they win.
+- Salman Omar
+
+# Contact
 - Salman Omar
