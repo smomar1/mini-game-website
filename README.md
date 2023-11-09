@@ -1,8 +1,8 @@
 # Mini-Game Website
 - Team 14
-- Yi Han
-- Tarlan Delfani
-- Salman Omar
+   - Yi Han
+   - Tarlan Delfani
+   - Salman Omar
 
 # Homepage
 - Yi Han
