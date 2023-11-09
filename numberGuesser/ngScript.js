@@ -73,3 +73,8 @@ const backToHomeButton = document.getElementById('backToHome');
 backToHomeButton.addEventListener('click', function() {
   window.location.href = '../index.html';
 });
+
+function toggleDescription() {
+  const descriptionContainer = document.getElementById('descriptionContainer');
+  descriptionContainer.classList.toggle('open'); // Add or remove the 'open' class
+}

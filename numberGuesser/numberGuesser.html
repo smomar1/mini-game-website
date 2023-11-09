@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Guesser</title>
-  <link rel="stylesheet" type="text/css" href="ngStyle.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="ngStyle.css" />
+  </head>
 
   <header>
     <h1>Number Guesser</h1>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-          <!-- The "Games" tab when panned over should show a dropdown list of games available -->
-          <li class="dropdown">
-            <a href="#">Games &#9660;</a>
-            <div class="dropdown-content">
-              <a href="numberGuesser.html">Number Guesser</a>
-              <a href="../Tarlan/rps.html">Rock Paper Scissors</a>
-              <a href="../hangmanIndex.html">Hangman</a>
-            </div>
-          </li>
+        <!-- The "Games" tab when panned over should show a dropdown list of games available -->
+        <li class="dropdown">
+          <a href="#">Games &#9660;</a>
+          <div class="dropdown-content">
+            <a href="numberGuesser.html">Number Guesser</a>
+            <a href="../Tarlan/rps.html">Rock Paper Scissors</a>
+            <a href="../hangmanIndex.html">Hangman</a>
+          </div>
+        </li>
         <li><a href="../contact.html">Contact</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Leaderboard</a></li>
@@ -30,7 +30,7 @@
 
   <body>
     <div class="container">
-      <img src="number_guesser_thumbnail.jpeg" alt="Number Guesser">
+      <img src="number_guesser_thumbnail.jpeg" alt="Number Guesser" />
       <p class="hello">Guess a number between 1 and 100</p>
       <input type="number" id="guessInput" />
       <input type="submit" value="Submit" id="guessSubmit" />
@@ -43,12 +43,26 @@
 
     <!-- <button id="resetButton">Play Again</button> -->
 
-    <button id="backToHome"><img src="homeIcon.png" alt="backToHome"></button>
-    
-    <script src="ngScript.js"></script>
-  
-    <footer>Yi Han</footer>
-  </body>
+    <button id="backToHome"><img src="homeIcon.png" alt="backToHome" /></button>
 
-  
+    <script src="ngScript.js"></script>
+
+    <div id="whiteSpace"></div>
+
+    <footer>
+      <div id="descriptionContainer">
+        The game begins by selecting a number. The range is from 1 to 100.
+        <br>Player then starts making guesses, after each guess, the game
+        provides feedback to the player, indicating whether the guess was too
+        high, too low, or correct. <br>The player continues to make guesses,
+        using the feedback to narrow down their choices until they eventually
+        guess the correct number. <br>The game may keep track of the number of
+        attempts the player has made and display this information, allowing the
+        player to challenge themselves to guess the number in as few attempts as
+        possible.
+      </div>
+      <button id="toggleDescriptionButton" onclick="toggleDescription()">Number Guesser</button>
+
+    </footer>
+  </body>
 </html>

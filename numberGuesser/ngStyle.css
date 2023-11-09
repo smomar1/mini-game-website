@@ -145,10 +145,27 @@ input[type="submit"] {
   height: 50px;
 }
 
+#descriptionContainer {
+  display: none;
+  
+}
+
+#descriptionContainer.open {
+  display: block;
+  padding-right: 100px;
+}
+
+#whiteSpace{
+  height: 200px;
+}
+
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #E70612;
   color: #fff;
   text-align: left;
-  padding: 20px;
+  padding: 5px;
   font-weight: bold;
 }
