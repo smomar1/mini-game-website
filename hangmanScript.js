@@ -69,11 +69,13 @@ function setGameOver() {
   });
 }
 
-function homeButton() {
-  const backToHomeButton =document.getElementById('backToHome');
-  backToHomeButton.addEventListener('click', () => {
-    window.location.href = 'index.html';
-  });  
-}
+const backToHomeButton = document.getElementById('backToHome');
+  
+backToHomeButton.addEventListener('click', function() {
+  window.location.href = 'index.html';
+});  
 
-homeButton();
+function toggleDescription() {
+  const descriptionContainer = document.getElementById('descriptionContainer');
+  descriptionContainer.classList.toggle('open');
+}
