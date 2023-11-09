@@ -162,7 +162,9 @@ nav ul li a:hover {
 } 
 
 
-
+#whiteSpace{
+    height: 200px;
+}
 
 #backToHome {
     position: fixed;
