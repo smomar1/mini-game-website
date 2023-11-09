@@ -1,5 +1,7 @@
 //Variable to keep track of rounds played
 let roundsPlayed = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 // Function to get a random choice for the computer
 function getComputerChoice() {
@@ -18,6 +20,18 @@ function play(playerChoice) {
     function updateResultText(message) {
         resultSection.innerHTML = message; // Update the result section with the message
     }
+    // Add this function to update scores after each round
+    function updateScores(playerChoice, computerChoice) {
+        if (playerChoice === computerChoice) {
+            return; // It's a tie, no need to update scores
+        } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
+            (playerChoice === 'paper' && computerChoice === 'rock') ||
+            (playerChoice === 'scissors' && computerChoice === 'paper')) {
+            playerScore++;
+        } else {
+            computerScore++;
+        }
+    } 
 
     if (playerChoice === computerChoice) {
         updateResultText(`It's a tie! You both chose ${playerChoice}.`);
@@ -29,6 +43,9 @@ function play(playerChoice) {
         updateResultText(`You lose! You chose ${playerChoice} and computer chose ${computerChoice}.`);
     }
 
+    updateScores(playerChoice, computerChoice); // Update scores after each round
+
+
     roundsPlayed++; // Increment rounds played
 
     // Update the game state and round counter
@@ -36,6 +53,16 @@ function play(playerChoice) {
     numRounds.textContent = `Round ${roundsPlayed } of 3`;
 
     if (roundsPlayed === 3) {
+
+        recordScores(); // Record scores after each set of three rounds
+        if (playerScore > computerScore) {
+            updateResultText(`You won this set of three rounds!`);
+        } else if (playerScore < computerScore) {
+            updateResultText(`Computer won this set of three rounds.`);
+        } else {
+            updateResultText(`It's a tie! Both the player and the computer won an equal number of sets.`);
+        }
+
         disableGameButtons(); // Disable game buttons if all rounds played
         enablePlayAgainButton(); // Enable Play Again button
     }
@@ -63,7 +90,53 @@ function resetGame() {
     const numRounds = document.getElementById('num');
     yourState.textContent = "You have 3 tries to win";
     numRounds.textContent = "Set the stage with your opening move!";
+
 }
+
+// Function to record scores after each set of three rounds
+function recordScores() {
+    const yourState = document.getElementById('yourstate');
+    const scoreContainer = document.createElement('div');
+    scoreContainer.classList.add('score-container');
+
+    const playerScoreElement = document.createElement('p');
+    playerScoreElement.textContent = `Player Score: ${playerScore}`;
+
+    const computerScoreElement = document.createElement('p');
+    computerScoreElement.textContent = `Computer Score: ${computerScore}`;
+
+    scoreContainer.appendChild(playerScoreElement);
+    scoreContainer.appendChild(computerScoreElement);
+
+    yourState.appendChild(scoreContainer);
+
+    // Reset scores after each set of three rounds
+    playerScore = 0;
+    computerScore = 0;
+
+
+}
+
+function displayDescription() {
+    const description = "This is the description text."; // Replace with your actual description
+    const descriptionElement = document.getElementById('description');
+    descriptionElement.textContent = description;
+}
+// Assuming you have a button with id "showDescriptionButton"
+const showDescriptionButton = document.getElementById('showDescriptionButton');
+
+showDescriptionButton.addEventListener('click', displayDescription);
+
+
+function toggleDescription() {
+    const descriptionContainer = document.getElementById('descriptionContainer');
+    descriptionContainer.classList.toggle('open'); // Add or remove the 'open' class
+}
+
+const toggleDescriptionButton = document.getElementById('toggleDescriptionButton');
+
+toggleDescriptionButton.addEventListener('click', toggleDescription);
+
 
 // Event listener for the "Play Again" button
 document.getElementById('playAgainButton').addEventListener('click', resetGame);
