@@ -63,6 +63,7 @@ function play(playerChoice) {
             updateResultText(`It's a tie! Both the player and the computer won an equal number of sets.`);
         }
 
+        //yourState.textContent = "";
         disableGameButtons(); // Disable game buttons if all rounds played
         enablePlayAgainButton(); // Enable Play Again button
     }
