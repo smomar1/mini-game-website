@@ -37,6 +37,10 @@
 - Yi Han
 
 # Rock Paper Scissors
+- Rock Paper Scissors is a classic hand gesture game where players choose between rock, paper, or scissors in a bid to outsmart their opponent.
+- Players take turns choosing one of three options: rock, paper, or scissors.
+- The winner is determined based on a simple set of rules: rock beats scissors, scissors beat paper, and paper beats rock.
+- The game typically consists of a series of rounds, and the player with the most wins at the end is declared the overall winner.
 - Tarlan Delfani
 
 # Hangman
