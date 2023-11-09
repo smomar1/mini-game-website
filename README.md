@@ -1,4 +1,11 @@
 # Mini-Game Website
+- Team 14
+- Yi Han
+- Tarlan Delfani
+- Salman Omar
+
+# Homepage
+- Yi Han
 
 ## Header
 - A prominently styled header displaying "Mini-Games Portal" or a similar title of your choice.
@@ -30,10 +37,17 @@
 - Yi Han
 
 # Rock Paper Scissors
+- Rock Paper Scissors is a classic hand gesture game where players choose between rock, paper, or scissors in a bid to outsmart their opponent.
+- Players take turns choosing one of three options: rock, paper, or scissors.
+- The winner is determined based on a simple set of rules: rock beats scissors, scissors beat paper, and paper beats rock.
+- The game typically consists of a series of rounds, and the player with the most wins at the end is declared the overall winner.
 - Tarlan Delfani
 
 # Hangman
 - Guessing Letters: The players who are trying to guess the word take turns suggesting letters of the alphabet. If the guessed letter is in the secret word, it is filled into the appropriate blank spaces.
 - If the letter is not in the word, the letter is placed in the guessed letter list and you are given a warning of how many attempts you have left. you start with 6.
 - Winning and Losing: The guessing players continue to suggest letters until they either guess the entire word correctly or make too many incorrect guesses, resulting in no more attempts. If they guess the word before the lose their attempts, they win.
+- Salman Omar
+
+# Contact
 - Salman Omar
