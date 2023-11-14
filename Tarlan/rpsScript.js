@@ -1,3 +1,6 @@
+
+
+
 //Variable to keep track of rounds played
 let roundsPlayed = 0;
 let playerScore = 0;
@@ -31,6 +34,7 @@ function play(playerChoice) {
         } else {
             computerScore++;
         }
+        
     } 
 
     if (playerChoice === computerChoice) {
@@ -53,19 +57,27 @@ function play(playerChoice) {
     numRounds.textContent = `Round ${roundsPlayed } of 3`;
 
     if (roundsPlayed === 3) {
+        
 
         recordScores(); // Record scores after each set of three rounds
+        console.log(playerScore);
+        console.log(computerScore);
+
         if (playerScore > computerScore) {
             updateResultText(`You won this set of three rounds!`);
         } else if (playerScore < computerScore) {
             updateResultText(`Computer won this set of three rounds.`);
         } else {
             updateResultText(`It's a tie! Both the player and the computer won an equal number of sets.`);
-        }
-
-        //yourState.textContent = "";
-        disableGameButtons(); // Disable game buttons if all rounds played
-        enablePlayAgainButton(); // Enable Play Again button
+        } 
+        
+        playerScore = 0;
+        computerScore = 0;
+        
+        disableGameButtons();
+        enablePlayAgainButton();
+    
+        
     }
 }
 
@@ -112,8 +124,8 @@ function recordScores() {
     yourState.appendChild(scoreContainer);
 
     // Reset scores after each set of three rounds
-    playerScore = 0;
-    computerScore = 0;
+    //playerScore = 0;
+    //computerScore = 0;
 
 
 }
